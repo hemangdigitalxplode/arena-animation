@@ -1,0 +1,95 @@
+.ourCourse-container {
+  margin-top: -250px;
+  .heading-ourcourse {
+    width: 100%;
+    text-align: center;
+    font-size: 6rem;
+    font-family: "BrbasNeueBoldItalic";
+    color: white;
+    padding: 0 0 30px;
+    letter-spacing: -6px;
+    word-spacing: 4px;
+  }
+  .cards-container {
+    // display: flex;
+    // flex-wrap: wrap;
+  }
+}
+.detailes-div {
+  padding-top: 80px;
+  color: white;
+  display: flex;
+  gap: 50px;
+  font-family: "Outfit", sans-serif;
+  .detailes-div-left {
+    font-size: 28px;
+    font-weight: 500;
+    width: 100%;
+  }
+  .detailes-div-right {
+    font-size: 18px;
+  }
+  .detailes-div-para1st {
+    padding-bottom: 24px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .ourCourse-container {
+    margin-top: 0px;
+    .heading-ourcourse {
+      font-size: 4rem;
+      padding: 0 0 20px;
+      letter-spacing: -2px;
+    }
+    .detailes-div {
+      padding-top: 20px;
+      flex-direction: column;
+      gap: 30px;
+      .detailes-div-left {
+        font-size: 1.6rem;
+        width: 100%;
+      }
+      .detailes-div-right {
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .subHeadingBackground .paraContainer {
+    font-size: 13px !important; 
+    gap: 20px !important;
+  }
+
+  .header-right .header-right-para {
+    font-size: 18px !important;
+    line-height: 22px !important;
+ 
+}
+
+.newfile{
+  height:90vh !important
+}
+
+  .ourCourse-container {
+    margin-top: 0px;
+    .heading-ourcourse {
+      font-size: 2.2rem;
+      padding: 0 0 20px;
+    }
+    .detailes-div {
+      padding-top: 20px;
+      flex-direction: column;
+      gap: 30px;
+      .detailes-div-left {
+        font-size: 14px;
+        width: 100%;
+      }
+      .detailes-div-right {
+        font-size: 1rem;
+      }
+    }
+  }
+}

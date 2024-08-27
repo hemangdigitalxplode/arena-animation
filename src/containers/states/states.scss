@@ -1,0 +1,55 @@
+.states-div {
+  margin-bottom: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding-top: 50px;
+  .sigle-stat {
+    width: calc(33% - 10px);
+    color: #fff;
+    .sigle-stat-title{
+      font-size: 6rem;
+        font-family: "BrbasNeueBold";
+        padding-bottom: 10px;
+    }
+    .sigle-stat-text{
+      font-family: 'Outfit', sans-serif;
+        font-size: 15px;
+        width: 60%;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .states-div{
+    margin-bottom: 0px;
+    .sigle-stat{
+      width: calc(50% - 10px);
+      .sigle-stat-title{
+        font-size: 3rem;
+          
+      }
+      .sigle-stat-text{
+        font-size: 1rem;
+        width: 80%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 540px){
+  .states-div{
+    margin-bottom: 0px;
+    .sigle-stat{
+      width: calc(50% - 10px);
+      .sigle-stat-title{
+        font-size: 3rem;
+          
+      }
+      .sigle-stat-text{
+        font-size: 1rem;
+        width: 80%;
+      }
+    }
+  }
+}

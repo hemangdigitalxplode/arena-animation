@@ -1,0 +1,36 @@
+.toolAndSoftware {
+  .toolAndSoftware-title {
+    text-align: center;
+    padding-top: 40px;
+  }
+  .toolAndSoftware-toolsList {
+    padding-top: 40px;
+    .toolAndSoftware-tool {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-size: 0.9rem;
+      font-family: "Outfit", sans-serif;
+      color: #fff;
+      .toolAndSoftware-img {
+        height: 100px;
+        width: 100px;
+        margin-bottom: 12px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 540px){
+    .toolAndSoftware {
+        .toolAndSoftware-toolsList {
+ 
+          .toolAndSoftware-tool {
+            font-size: 12px;
+          
+          }
+        }
+      }
+}

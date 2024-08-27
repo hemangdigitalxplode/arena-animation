@@ -1,0 +1,101 @@
+.payment-container {
+  background-image: url("../../assets/paymentbg.png");
+  background-repeat: round;
+  background-position-x: 0px;
+  background-position-y: 0px;
+  object-fit: contain;
+  height: 120vh;
+  .payment-inner-div {
+    display: flex;
+    justify-content: center;
+    .payment-title-div {
+      padding-top: 80px;
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      .payment-title {
+        font-size: 4.6rem;
+        font-family: "BrbasNeueBoldItalic";
+        line-height: 0.8;
+        color: transparent;
+        -webkit-text-stroke: 1px white;
+        text-transform: uppercase;
+        cursor: pointer;
+      }
+      .payment-title-onclick {
+        font-size: 4.6rem;
+        font-family: "BrbasNeueBoldItalic";
+        line-height: 0.8;
+        color: #fff;
+        text-transform: uppercase;
+        cursor: pointer;
+      }
+      .drow-sign {
+        text-align: center;
+        font-size: 2rem;
+        color: #ffd800;
+      }
+      .drow-sign-display-none {
+        color: transparent;
+        text-align: center;
+        font-size: 2rem;
+      }
+    }
+  }
+  .form-container {
+    display: flex;
+    justify-content: center;
+  }
+  .Payment-form {
+    width: 600px;
+    margin-top: 30px;
+  }
+  .payment-input {
+    background-color: transparent;
+    border-radius: 24px;
+    color: #fff;
+    width: 100%;
+    padding: 6px 10px;
+  }
+  .form-error{
+    color: red;
+  }
+  .payment-input::-webkit-input-placeholder {
+    color: #9b9b9b;
+  }
+  option {
+    color: #000;
+  }
+  .payment-button-div {
+    display: flex;
+    justify-content: center;
+  }
+  .padding-top-80px{
+    padding-top: 80px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .payment-container {
+    height: fit-content;
+    padding-bottom: 20px;
+    .payment-inner-div {
+      .payment-title-div {
+
+        .payment-title {
+          font-size: 2rem;
+        }
+        .payment-title-onclick {
+          font-size: 2rem;
+        }
+      }
+    }
+    .Payment-form{
+      width: 100%;
+    }
+    .padding-top-80px{
+      padding-top: 20px;
+    }
+  }
+}

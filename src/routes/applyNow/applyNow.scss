@@ -1,0 +1,28 @@
+.apply-now {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.apply-now-form {
+  color: #fff;
+  font-family: "StolzlBook";
+  background-color: #111111;
+  padding: 40px;
+  border-radius: 24px;
+  .from-submit {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .apply-now-form {
+    font-size: 3.2rem;
+    .form-select,
+    .form-control {
+      font-size: 3.2rem;
+    }
+    .mb-4 {
+      margin-bottom: 3.5rem !important;
+    }
+  }
+}

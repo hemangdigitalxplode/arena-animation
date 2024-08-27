@@ -1,0 +1,99 @@
+.CallBackForm {
+  padding-top: 40px;
+  // border-bottom: 1px solid #fff;
+  .CallBackForm-title {
+    text-align: center;
+  }
+  .CallBackForm-form-outer-div {
+    font-family: "StolzlBook";
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    .CallBackForm-form-inner-div {
+      // width: 1100px;
+      border-radius: 24px;
+      padding: 0 40px 20px;
+      background-color: #111111;
+    }
+    .form-field-div {
+      display: flex;
+      gap:10px;
+      padding: 30px 0 30px;
+
+      border-bottom: 1px #fff solid;
+      label {
+        width: 30%;
+        font-size: 1.4rem;
+      }
+      .formInput {
+        width: 70%;
+        background-color: #111111;
+        color: #fff;
+        font-size: 1.2rem;
+      }
+    }
+    .form-bottom {
+      padding-top: 40px;
+      .text-capcha {
+        display: flex;
+        justify-content: center;
+        .text {
+          width: 60%;
+          font-size: 1rem;
+        }
+      }
+      .form-submit {
+        padding-top: 40px;
+        text-align: center;
+        padding-bottom: 30px;
+        font-size: 1.2rem;
+      }
+    }
+  }
+  .form-error {
+    padding-top: 8px;
+    text-align: end;
+    color: red;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .CallBackForm {
+    padding-top: 20px;
+    .CallBackForm-form-outer-div {
+      width: 100% !important;
+      .CallBackForm-form-inner-div {
+        padding: 0 20px 30px;
+      }
+      .form-field-div {
+        label {
+          font-size: 1rem;
+          width: 40%;
+        }
+        .formInput {
+          width: 60%;
+          font-size: 1rem;
+        }
+      }
+      .form-bottom {
+        .text-capcha {
+          flex-direction: column;
+          justify-content: unset;
+          gap: 10px;
+          .text {
+            font-size: 12px;
+            width: 100%;
+          }
+          .capcha {
+            display: table;
+            margin: auto;
+          }
+        }
+        .form-submit {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}

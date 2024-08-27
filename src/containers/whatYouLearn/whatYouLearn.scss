@@ -1,0 +1,60 @@
+.whatYouLearn {
+  .whatYouLearn-title {
+    text-align: center;
+    padding-top: 40px;
+  }
+  .Terms-label {
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    font-family: "Outfit", sans-serif;
+    padding-top: 30px;
+    .Terms-inner {
+      background-color: #f9ec1e;
+      padding: 10px 34px;
+      border-radius: 24px;
+      font-size: 1rem;
+      font-weight: 700;
+      cursor: pointer;
+    }
+  }
+  .term-points {
+    justify-content: center;
+    .term-points-card {
+      background-color: #111111;
+      margin: 30px 10px 20px;
+      padding: 20px 40px;
+      border-radius: 20px;
+      font-family: "Outfit", sans-serif;
+      color: #cacaca;
+      .term-point {
+        padding: 10px;
+        .yellowTick {
+          height: 20px;
+          padding-right: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .whatYouLearn {
+    .Terms-label {
+      .Terms-inner {
+        // font-size: 2.2rem;
+      }
+    }
+    .term-points {
+      .term-points-card {
+        // font-size: 2.4rem;
+        .term-point {
+          .yellowTick {
+            // height: 46px;
+          }
+        }
+      }
+    }
+  }
+}

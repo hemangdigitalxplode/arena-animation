@@ -1,0 +1,49 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "BrbasNeueBold";
+  src: url("../src/fonts/bebas neue pro/Bebas Neue Pro Bold.otf");
+}
+@font-face {
+  font-family: "BrbasNeueRegular";
+  src: url("../src/fonts/bebas neue pro/Bebas Neue Pro Regular.otf");
+}
+@font-face {
+  font-family: "BrbasNeueBoldItalic";
+  src: url("../src/fonts/bebas neue pro/Bebas Neue Pro Expanded Bold Italic.otf");
+}
+@font-face {
+  font-family: "BrbasNeueSemiExpandedBold";
+  src: url("../src/fonts/bebas neue pro/HelveticaNowDisplay-Medium.ttf");
+}
+@font-face {
+  font-family: "BrbasNeueSemiExpandedMiddle";
+  src: url("../src/fonts/bebas neue pro/Bebas Neue Pro Expanded Middle.otf");
+}
+@font-face {
+  font-family: "StolzlBook";
+  src: url("../src/fonts/bebas neue pro/Stolzl Book.ttf");
+}
+
+body {
+  margin: 0px !important;
+  min-width: fit-content !important;
+}
+
+#root {
+  min-width: fit-content !important;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.carousel-indicators .button{
+  bottom: -39px !important;
+}

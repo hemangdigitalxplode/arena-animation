@@ -1,0 +1,34 @@
+.course-highlights{
+    padding-top: 50px;
+    .course-highlights-title{
+        text-align: center;
+    }
+    .course-highlights-points{
+        background-color: #f9ec1e;
+        margin-top: 40px;
+        padding: 40px;
+        border-radius: 20px;
+        font-family: 'Outfit', sans-serif;
+        font-weight: 600;
+        font-size: 1rem;
+        .course-highlights-point{
+            padding: 10px;
+            .Black-Tick{
+                height: 20px;
+                padding-right: 10px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .course-highlights{
+        .course-highlights-points{
+            .course-highlights-point{
+                .Black-Tick{
+                    height: 38px;
+                }
+            }
+        }
+    }
+}

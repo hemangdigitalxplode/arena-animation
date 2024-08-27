@@ -1,0 +1,105 @@
+.header {
+  height: fit-content;
+
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+
+}
+
+.header-right {
+  width: 46%;
+  top: 18%;
+  right: 0%;
+  color: white;
+  padding-top: 10%;
+  .heading-arena {
+    font-family: "BrbasNeueBoldItalic";
+    line-height: .8;
+    text-transform: uppercase;
+    width:70%;
+
+  }
+  .header-right-para {
+    color: #9b9b9b;
+    padding-top:55px;
+    font-family: "Outfit", sans-serif;
+    font-size: 22px;
+    width: 75%;
+    font-weight: 400;
+    word-spacing: 4px;
+    line-height: 1.4;
+    span {
+      color: white;
+    }
+  }
+}
+
+.animation-video{
+  video{
+    object-fit: cover;
+  }
+}
+.mobile-only{
+  display:none;
+}
+@media screen and (max-width: 992px) {
+  .header {
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .animation-video{
+    width: auto !important;
+  }
+  .desktop-only{
+    display:none;
+  }
+  .mobile-only{
+    display:block;
+  }
+  .mbuse video{
+    margin-top: -68px;
+  }
+  .mbtotal{
+    position: relative;
+  }
+.mobile-only .form-row {
+    padding: 20px 20px 20px 55px;
+}
+  .header-right {
+    width: 100%;
+    top: 7%;
+    right: 4%;
+    text-align: center;
+    .header-right-para {
+      width: 100%;
+    }
+  }
+}
+@media screen and (max-width: 540px) {
+.heading-arena {
+  width: 100% !important;
+ 
+}
+.footerContainer .contact-info{
+  background: #000;
+  left: 0;
+  margin: auto;
+  padding: 15px 0px;
+  right: 0;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+}
+.button-style {
+  padding: 8px 15px !important;
+}
+.card-container .border-style {
+  border-radius: 12px !important;
+}
+.card-container .img video {
+  border-radius: 12px !important;
+}
+}
