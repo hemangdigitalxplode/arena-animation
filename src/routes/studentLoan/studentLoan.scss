@@ -1,0 +1,72 @@
+.top-banner-section {
+  position: relative;
+  .student-loan-title {
+    position: absolute;
+    top: 40%;
+    left: 18%;
+  }
+}
+
+.loan-description-section {
+  background-color: #1a1a1a;
+  color: #fff;
+  .top-section {
+    padding: 8% 5%;
+  }
+}
+
+.height-100per {
+  height: 100%;
+}
+
+.benefits-section {
+  padding-bottom: 50px;
+}
+
+.benefit-border {
+  height: 100%;
+  border: #fff 1px solid;
+}
+
+.benefit-big-box {
+  padding: 16px 44px;
+}
+
+.benefit-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 30px;
+}
+
+.font-weight {
+  font-weight: 500;
+}
+
+.label-bg {
+  background-color: #000;
+}
+
+.margin-top-80px {
+  margin-top: 80px;
+}
+
+@media screen and (max-width: 978px) {
+}
+@media screen and (max-width: 768px) {
+  .height-100vh {
+    height: 80vh;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .height-100vh {
+    height: 100vh;
+  }
+  .top-banner-section {
+    .student-loan-title {
+      top: 30%;
+      left: 18%;
+    }
+  }
+}

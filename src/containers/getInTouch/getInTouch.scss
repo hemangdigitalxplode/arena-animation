@@ -1,0 +1,147 @@
+.get-in-touch {
+  background-image: url("../../assets/contactBg.png");
+  background-repeat: no-repeat;
+  background-position-x: 0px;
+  background-position-y: 90%;
+  width: 100%;
+  .get-in-touch-title {
+    padding-top: 60px;
+  }
+  .get-in-touch-row {
+    padding-top: 40px;
+    font-family: "StolzlBook";
+    justify-content: center;
+    .get-in-touch-nav {
+      margin: 10px;
+      background-color: #ffffff;
+      color: #888888;
+      padding: 20px 10px 20px 30px;
+      border-radius: 24px;
+      .address-div {
+        padding: 10px;
+        cursor: pointer;
+        .address-heading {
+          font-weight: bold;
+          text-transform: uppercase;
+          font-size: 1.2rem;
+        }
+        .address-div-subheading {
+          font-weight: 500;
+          text-transform: capitalize;
+          font-size: 0.8rem;
+        }
+      }
+      .address-div:hover {
+        color: #000;
+        .address-div-subheading {
+          font-weight: 600;
+        }
+      }
+      .active {
+        color: #000;
+        padding: 10px;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        .address-heading {
+          font-weight: bold;
+          text-transform: uppercase;
+          font-size: 1.2rem;
+        }
+        .address-div-subheading {
+          font-weight: 600;
+          text-transform: capitalize;
+          font-size: 0.8rem;
+        }
+      }
+    }
+    .get-in-touch-card {
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+      margin: 10px;
+      border-radius: 24px;
+      .map-div {
+        .map {
+          width: 100%;
+          border-radius: 24px;
+          max-height: 320px;
+          object-fit: contain;
+        }
+      }
+      .card-bottom {
+        color: #fff;
+        .left {
+          padding: 0px 60px;
+          margin: 40px 0;
+          border-right: #fff 1px solid;
+          .fullAddress {
+            padding-top: 18px;
+          }
+        }
+        .right {
+          padding: 0 60px;
+          margin: 40px 0;
+          .buttons {
+            display: flex;
+            justify-content: space-around;
+            font-size: 12px;
+          }
+          .location-link {
+            text-decoration: underline;
+            text-align: center;
+            padding-top: 20px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .get-in-touch {
+    padding: 0px;
+    .get-in-touch-row {
+      margin: 10px;
+      .get-in-touch-nav {
+        .address-div {
+          .address-heading {
+            // font-size: 2.6rem;
+          }
+          .address-div-subheading {
+            // font-size: 1.8rem;
+          }
+        }
+        .active {
+          .address-heading {
+            // font-size: 2.6rem;
+          }
+          .address-div-subheading {
+            // font-size: 1.8rem;
+          }
+        }
+      }
+      .get-in-touch-card {
+        .map-div {
+          .map {
+            // max-height: 500px;
+          }
+        }
+        .card-bottom {
+          .left {
+            // font-size: 2.6rem;
+            border-right: none;
+          }
+          .right {
+            .buttons {
+              // font-size: 2rem;
+            }
+            .location-link {
+              // font-size: 2.6rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

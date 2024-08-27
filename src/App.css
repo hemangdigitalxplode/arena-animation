@@ -1,0 +1,162 @@
+.app {
+  background-color: #000000;
+  /* padding-top: 40px; */
+  /* min-width: 1240px; */
+  margin: 0 auto;
+  scroll-behavior: smooth;
+}
+
+.container-default {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+.title {
+  font-size: 5rem;
+  font-family: "BrbasNeueBoldItalic";
+  line-height: 0.8;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: -4px;
+  word-spacing: 4px;
+}
+
+.padding-top {
+  padding-top: 60px;
+}
+
+.scale-up-center {
+  -webkit-animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1)
+    both;
+  animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+.apply-now-button-sticky {
+  position: fixed;
+  transform: rotate(270deg);
+  top: 45%;
+  right: 0%;
+  z-index: 5;
+}
+
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@media screen and (max-width: 1240px) {
+  /* .container-default {
+    width: 100vw;
+  } */
+  .title {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 992px) {
+  /* .container-default {
+    width: 100vw;
+  } */
+  .title {
+    letter-spacing: -2px;
+  }
+  .apply-now-button-sticky {
+    display: none;
+  }
+
+
+  .navbar-small-screen .navbar-menu{
+    right: 1% !important;
+    width: 70%;
+    padding-bottom: 20px;
+    top: 90%;
+  }
+  
+  .navbar-small-screen .navbar-menu .navigation-items .item-name {
+    padding: 13px 15px !important;
+    border-radius: 0px !important;
+    border: none !important;
+    width: 75%;
+    margin: auto;
+  }
+  .navigation-items a{
+    border-bottom: 1px solid #fff;
+  }
+  .border-topc{
+    border-top: 1px solid #fff;
+  }
+  .card-container{
+    width:50%;
+  }
+  .address-main-div{
+    background: #202020;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 20px;
+    margin: 5px;
+    border-radius: 22px;
+  }
+  .yellow{
+    color:yellow;
+  }
+  .text-f{
+    font-size: 16px;
+  }
+
+}
+.menuitems{
+  width:230px;
+}
+.text-icon{
+
+  font-size: 20px;
+  width:30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+  
+
+}
+.breadcrumb{
+  padding: 10px 20px;
+  text-align: center;
+  display: block ruby;
+}
+.breadhead nav{
+  background: yellow;
+  margin-top: 30px;
+}
+.breadhead{
+  padding: 0px;
+}
+
+ .breadcrumb-item+.breadcrumb-item::before {
+        float: none !important;
+            }

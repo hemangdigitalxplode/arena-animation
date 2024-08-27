@@ -1,0 +1,189 @@
+.modal-container {
+  min-width: 1240px;
+}
+
+.navbar-top-container {
+  position: fixed;
+  z-index: 10;
+  background-color: #000;
+  padding-top: 40px;
+  padding-bottom: 5px;
+}
+
+.navbar-container {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  color: #eaebf4;
+
+  .logo {
+    .logo-img {
+      height: 50px;
+      width: 180px;
+    }
+  }
+
+  .courses-listGroup {
+    position: absolute;
+    padding-top: 8px;
+
+    .course-link {
+      border-radius: 4px;
+    }
+  }
+
+  .courses-listGroup1 {
+    position: absolute;
+    padding-top: 8px;
+    height: 380px;
+    overflow-y: scroll;
+
+    .course-link {
+      border-radius: 4px;
+    }
+  }
+
+  .courses-listGroup1::-webkit-scrollbar {
+    width: 6px;
+    /* Width of the scrollbar */
+  }
+
+  .courses-listGroup1::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+    /* Background color of the scrollbar track */
+  }
+
+  .courses-listGroup1::-webkit-scrollbar-thumb {
+    background-color: #888;
+    /* Color of the scrollbar thumb */
+    border-radius: 4px;
+    /* Border radius of the scrollbar thumb */
+  }
+
+  .courses-listGroup1::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+    /* Color of the scrollbar thumb on hover */
+  }
+
+  .navigation-items {
+    display: flex;
+
+    .item-name {
+      padding: 0 15px;
+      cursor: pointer;
+      font-family: "Outfit", sans-serif;
+
+      font-weight: 500;
+
+      font-size: 14px;
+    }
+
+    a:hover {
+      text-decoration: none;
+      color: white;
+    }
+  }
+
+  .button-div {
+    font-family: "BrbasNeueSemiExpandedBold";
+    font-size: 14px;
+    // .button-callNow {
+    //   color: #000;
+    //   background: #fff;
+    //   padding: 12px 30px;
+    //   border-radius: 26px;
+    //   cursor: pointer;
+    //   font-family: "BrbasNeueRegular";
+    //   font-size: 1rem;
+    // }
+    // .button-callNow:hover {
+    //   background-color: #ffd800;
+    // }
+  }
+}
+
+.navbar-small-screen {
+  display: none;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  background-color: #000;
+
+  .navbar-menu {
+    color: #ffffff;
+    position: absolute;
+    background-color: black;
+    // border-radius: 20px;
+    // border:1px solid #FFF;
+    right: 4%;
+
+    .navigation-items {
+      display: flex;
+      flex-direction: column;
+
+      .item-name {
+        padding: 20px 20px;
+        border: 1px solid #fff;
+        border-radius: 20px;
+        font-size: 1rem;
+        text-align: center;
+      }
+
+      .item-name:hover {
+        background-color: #ffd800;
+        color: #000;
+      }
+    }
+  }
+}
+
+.modal-content {
+  color: #fff;
+  font-family: "StolzlBook";
+  background-color: #111111;
+}
+.t-dic{
+  background-color: #25D366 !important;
+  color: #000;
+        padding: 12px 30px;
+        border-radius: 26px;
+        cursor: pointer;
+        border: none;
+}
+
+@media screen and (max-width: 992px) {
+  .navbar-container {
+    display: none;
+  }
+
+  .navbar-small-screen {
+    display: flex;
+    padding: 20px 20px 8px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  // .my-modal-lg {
+  //   width: 1200px;
+  // }
+}
+
+.btn-0 {
+
+  background: none !important;
+  border: none !important;
+  padding: 0px;
+  font-size: 0;
+}
+.menuitems{
+  background: black;
+}
+
+.d-inherit{
+  display: inherit;
+}
+.courses-listGroup{
+  overflow: scroll;
+  height: 500px;
+}

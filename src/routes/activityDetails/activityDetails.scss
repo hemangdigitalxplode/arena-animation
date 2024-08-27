@@ -1,0 +1,46 @@
+.acivity-container {
+  color: #fff;
+  font-family: "Outfit", sans-serif;
+}
+
+.activity-banner {
+  padding-top: 40px;
+  display: flex;
+  justify-content: center;
+  .bannner {
+    width: 100%;
+    height: 350px;
+    object-fit: fill;
+  }
+}
+.activity-title {
+  font-size: 36px;
+  padding-top: 20px;
+}
+
+.activity-desc {
+  font-size: 1rem;
+  padding-top: 20px;
+}
+
+.album-img {
+  width: 100%;
+  object-fit: fill;
+}
+
+@media screen and (max-width: 540px) {
+  .activity-banner {
+    padding-top: 20px;
+
+    .bannner {
+      height: 250px;
+    }
+  }
+  .activity-title {
+    font-size: 26px;
+  }
+
+  .album-img {
+    height: 200px;
+  }
+}

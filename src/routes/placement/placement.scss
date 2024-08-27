@@ -1,0 +1,88 @@
+.top-banner-section {
+  position: relative;
+  .text-section {
+    position: absolute;
+    top: 40%;
+    left: 10%;
+  }
+}
+.placement-desc {
+  width: 40%;
+  margin-top: 14px;
+  font-size: 18px;
+  font-weight: 500;
+}
+.placement-desc {
+  font-family: "Outfit", sans-serif;
+  color: #fff;
+}
+
+.gray-section {
+  background-color: #1a1a1a;
+  color: #fff;
+  font-family: "Outfit", sans-serif;
+  .gray-section-text {
+    padding: 5% 8%;
+    text-align: center;
+  }
+  .job-placement-desc {
+    padding: 0 20%;
+  }
+}
+
+.description {
+  font-family: "Outfit", sans-serif;
+  color: #fff;
+  padding-top: 20px;
+  font-size: 20px;
+}
+.placement-img {
+  width: 100%;
+  padding: 0 20px;
+}
+
+.font-size-button {
+  font-size: 18px;
+}
+
+@media screen and (max-width: 978px) {
+  .top-banner-section {
+    .text-section {
+      top: 20%;
+      left: 10%;
+    }
+  }
+  .placement-desc {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .height-100vh {
+    height: 100vh;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .placement-title {
+    padding-top: 20px;
+  }
+  .placement-desc {
+    width: 80%;
+  }
+  .description {
+    p {
+      font-size: 16px;
+    }
+  }
+  .placement-img {
+    padding: 0 10px;
+  }
+  .gray-section {
+    .job-placement-desc {
+      padding: 0 10%;
+    }
+  }
+  .font-size-button {
+    font-size: 14px;
+  }
+}

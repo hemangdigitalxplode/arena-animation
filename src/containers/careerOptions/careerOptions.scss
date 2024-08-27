@@ -1,0 +1,140 @@
+.CareerOptions {
+  .CareerOptions-title {
+    text-align: center;
+    padding-top: 50px;
+  }
+  .careerOption-content {
+    padding-top: 40px;
+    font-family: "StolzlBook";
+    justify-content: center;
+    .careerOption-content-nav {
+      margin: 10px;
+      background-color: #111111;
+      color: #9b9b9b;
+      padding: 20px 30px;
+      border-radius: 24px;
+      overflow-y: scroll;
+      height: 480px;
+
+    
+      .nav-item {
+        padding: 10px;
+        cursor: pointer;
+      }
+      .nav-item:hover {
+        color: #fff;
+      }
+      .active{
+        color: #fff;
+        padding: 10px;
+        cursor: pointer;
+      }
+    }
+    .careerOption-content-card {
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+      margin: 10px;
+      border-radius: 24px;
+      background-color: #111111;
+      .careerOption-img-div {
+        .careerOption-img {
+          width: 100%;
+          border-radius: 24px;
+          max-height: 250px;
+          object-fit: fill;
+        }
+      }
+      .careerOption-text-div {
+        padding: 26px;
+        color: #fff;
+        .left {
+          .CareerOption-title {
+            font-size: 2.4rem;
+            font-weight: 700;
+            width: 80%;
+            line-height: 1;
+            padding-bottom: 12px;
+          }
+          .IamIntersted {
+            background-color: #f9ec1e;
+            width: 70%;
+            text-align: center;
+            padding: 10px 34px;
+            border-radius: 24px;
+            font-size: 1rem;
+            font-weight: 700;
+            color: #111111;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+.careerOption-content-nav{
+    height: auto !important;
+  }
+ 
+}
+
+
+
+
+
+
+@media screen and (max-width: 540px) {
+  .CareerOptions {
+    .careerOption-content {
+      .careerOption-content-nav {
+        // font-size: 2.6rem;
+      }
+      .careerOption-content-card {
+        .careerOption-img-div {
+          .careerOption-img {
+            // max-height: 500px;
+          }
+        }
+        .careerOption-text-div {
+          .left {
+            .CareerOption-title {
+              // font-size: 4.4rem  ;
+            }
+            .IamIntersted {
+              // font-size: 2.4rem;
+            }
+          }
+          .right{
+            // font-size: 2.4rem;
+            padding-top: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.CareerOptions .careerOption-content .careerOption-content-nav::-webkit-scrollbar {
+  width: 0px;
+  border-radius: 24px;
+}
+
+/* Track */
+.CareerOptions .careerOption-content .careerOption-content-nav::-webkit-scrollbar-track {
+  background: #111111; 
+  border-radius: 24px;
+}
+ 
+/* Handle */
+.CareerOptions .careerOption-content .careerOption-content-nav::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+.CareerOptions .careerOption-content .careerOption-content-nav::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}

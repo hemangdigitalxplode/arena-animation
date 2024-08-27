@@ -1,0 +1,56 @@
+.eligibilityDurationFees {
+  padding-top: 40px;
+  .eligibilityDurationFees-content {
+    background-color: #f9ec1e;
+    border-radius: 24px;
+    columns: #000;
+    .content-div {
+      padding: 20px;
+      margin: 24px 0;
+      text-align: center;
+      .content-title {
+        font-family: "BrbasNeueBoldItalic";
+        text-transform: uppercase;
+        font-size: 2.6rem;
+        font-weight: 900;
+        letter-spacing: -2px;
+        padding-bottom: 10px;
+      }
+      .content-text {
+        font-family: "Outfit", sans-serif;
+        font-size: 1rem;
+        font-weight: 500;
+        text-align: center;
+        width: 70%;
+      }
+    }
+    .content-div:nth-child(2) {
+      border-left: 1px solid #000;
+      border-right: 1px solid #000;
+    }
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .eligibilityDurationFees {
+    padding-top: 20px;
+    .eligibilityDurationFees-content {
+      padding: 20px;
+      .content-div {
+        margin: 0px;
+        .content-title {
+          font-size: 2rem;
+        }
+        .content-text {
+          font-size: 1rem;
+        }
+      }
+      .content-div:nth-child(2) {
+        border-top: 1px solid #000;
+        border-bottom: 1px solid #000;
+        border-left: none;
+        border-right: none;
+      }
+    }
+  }
+}

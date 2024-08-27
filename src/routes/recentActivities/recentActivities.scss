@@ -1,0 +1,43 @@
+.recent-act-title {
+  text-align: center;
+  padding-top: 40px;
+}
+
+.recent-activities-list {
+  padding: 30px 60px;
+  font-family: "Outfit", sans-serif;
+
+  .activity-card {
+    color: #000;
+    cursor: pointer;
+    margin-bottom: 20px;
+    .activity-img {
+      height: 200px;
+      width: 100%;
+      object-fit: fill;
+    }
+    .activity-title {
+      text-align: center;
+      font-size: 1.4rem;
+      font-weight: 800;
+    }
+  }
+
+  .activity-card:hover {
+    transform: scale(1.02);
+    box-shadow: rgba(213, 196, 196, 0.085) 0px 1px 2px,
+      rgba(213, 196, 196, 0.085) 0px 2px 4px,
+      rgba(213, 196, 196, 0.085) 0px 4px 8px,
+      rgba(213, 196, 196, 0.085) 0px 8px 16px,
+      rgba(213, 196, 196, 0.085) 0px 16px 32px,
+      rgba(213, 196, 196, 0.085) 0px 32px 64px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .recent-activities-list {
+    .activity-card{
+      position: static !important;
+    }
+  }
+}
