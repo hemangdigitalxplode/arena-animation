@@ -137,7 +137,7 @@ const CourseDetails = ({ handleShow }) => {
   const route = routes.find((route) => route.path === location.pathname);
   let slug = location.pathname.split("/");
   slug = slug[slug.length - 1];
-  let courseId;
+  const [courseId, setCourseId] = useState(null);
   const [courseList, setCourseList] = useState("");
   const [courseDetail, setCourseDetail] = useState(null);
   const [studentWork, setStudentWork] = useState(null);
@@ -150,7 +150,7 @@ const CourseDetails = ({ handleShow }) => {
   
   const getStudentWork = () => {
     setLoader(true);
-    API.get("/home")
+    courseId && API.get("/home")
       .then((response) => {
         setLoader(false);
         setStudentWork(response?.data?.data?.portfolio);
@@ -160,12 +160,23 @@ const CourseDetails = ({ handleShow }) => {
       });
   };
 
-  Object.entries(courseList).forEach((data) => {
-    const urlSlug = data[1].slug;
-    if (urlSlug === slug) {
-      courseId = data[1]?.id;
+  // Object.entries(courseList).forEach((data) => {
+  //   const urlSlug = data[1].slug;
+  //   if (urlSlug === slug) {
+  //     setCourseId(data[1]?.id);
+  //   }
+  // });
+
+  useEffect(() => {
+    if (courseList && slug) {
+      Object.entries(courseList).forEach(([key, data]) => {
+        const urlSlug = data.slug;
+        if (urlSlug === slug) {
+          setCourseId(data.id);
+        }
+      });
     }
-  });
+  }, [courseList, slug]); 
 
     useEffect(() => {
       API.get("/course")
@@ -183,7 +194,7 @@ const CourseDetails = ({ handleShow }) => {
       "this is the id mentioned in coursedetail.jsx and here it is " + courseId
     );
     setLoader(true);
-    API.get(`/course/${courseId}`)
+    courseId && API.get(`/course/${courseId}`)
 
       .then((response) => {
         setLoader(false);
@@ -247,11 +258,11 @@ const CourseDetails = ({ handleShow }) => {
       <CourseHighlights highlight={courseDetail?.course_highlight} />
       <WhatYouLearn courseTerms={courseDetail?.course_term} />
       <ToolsAndSoftware coursetools={courseDetail?.course_tool} />
-      <CareerOptions
+      {courseId!==null && <CareerOptions
         careerOptions={courseDetail?.course_career}
         careerOption={careerOption}
         handleShow={handleShow}
-      />
+      />}
       <EligibilityDurationFees
         eligibilityCriteria={courseDetail?.eligibility_criteria}
         courseDurationDetail={courseDetail?.course_duration_detail}
@@ -272,3 +283,4 @@ const CourseDetails = ({ handleShow }) => {
 };
 
 export default CourseDetails;
+

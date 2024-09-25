@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://www.animationdelhincr.com/</loc>
+  </url>
+  <url>
     <loc>https://www.animationdelhincr.com/blog</loc>
   </url>
   <url>
@@ -8,9 +11,6 @@
   </url>
   <url>
     <loc>https://www.animationdelhincr.com/blog/can-animation</loc>
-  </url>
-  <url>
-    <loc>https://www.animationdelhincr.com/</loc>
   </url>
   <url>
     <loc>https://www.animationdelhincr.com/blog/get-the-basics-right</loc>
@@ -61,10 +61,10 @@
     <loc>https://www.animationdelhincr.com/course-details/2d-animation</loc>
   </url>
   <url>
-    <loc>https://www.animationdelhincr.com/course-details/2d-animation-course-in-delhi</loc>
+    <loc>https://www.animationdelhincr.com/course-details/2d-animation-course-in-noida</loc>
   </url>
   <url>
-    <loc>https://www.animationdelhincr.com/course-details/2d-animation-course-in-noida</loc>
+    <loc>https://www.animationdelhincr.com/course-details/2d-animation-course-in-delhi</loc>
   </url>
   <url>
     <loc>https://www.animationdelhincr.com/course-details/degree-courses-in-animation</loc>

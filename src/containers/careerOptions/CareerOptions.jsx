@@ -13,7 +13,7 @@ const CareerOptions = ({ careerOptions, careerOption, handleShow }) => {
   const handleChange = (item) => {
     setNavigation(item);
   };
-
+console.log(careerOptions)
   return (
     <Container className="CareerOptions">
       {/* <div className="CareerOptions container-default"> */}
@@ -23,11 +23,10 @@ const CareerOptions = ({ careerOptions, careerOption, handleShow }) => {
           {careerOptions &&
             careerOptions?.map((i) => (
               <div
-                key={i.id}
-                className={navigation.id === i.id ? "active" : `nav-item`}
+                className={navigation?.id === i?.id ? "active" : `nav-item`}
                 onClick={() => handleChange(i)}
               >
-                {i.title}
+                {i?.title}
               </div>
             ))}
         </Col>
