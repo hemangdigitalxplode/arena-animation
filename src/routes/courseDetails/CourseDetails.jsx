@@ -139,8 +139,8 @@ const CourseDetails = ({ handleShow }) => {
   slug = slug[slug.length - 1];
   let courseId;
   const [courseList, setCourseList] = useState("");
-  const [courseDetail, setCourseDetail] = useState("");
-  const [studentWork, setStudentWork] = useState("");
+  const [courseDetail, setCourseDetail] = useState(null);
+  const [studentWork, setStudentWork] = useState(null);
   const [loader, setLoader] = useState(false);
   const [careerOption, setCareerOption] = useState("");
   // FAQ questions here
@@ -163,7 +163,7 @@ const CourseDetails = ({ handleShow }) => {
   Object.entries(courseList).forEach((data) => {
     const urlSlug = data[1].slug;
     if (urlSlug === slug) {
-      courseId = data[1].id;
+      courseId = data[1]?.id;
     }
   });
 
@@ -253,8 +253,8 @@ const CourseDetails = ({ handleShow }) => {
         handleShow={handleShow}
       />
       <EligibilityDurationFees
-        eligibilityCriteria={courseDetail.eligibility_criteria}
-        courseDurationDetail={courseDetail.course_duration_detail}
+        eligibilityCriteria={courseDetail?.eligibility_criteria}
+        courseDurationDetail={courseDetail?.course_duration_detail}
         courseFeeDetail={courseDetail?.course_fee_detail}
       />
       <StudentWork workImgs={studentWork} />

@@ -5,8 +5,11 @@ import { Row, Col, Container } from "react-bootstrap";
 // import { set } from "date-fns";
 
 const CareerOptions = ({ careerOptions, careerOption, handleShow }) => {
-  const [navigation, setNavigation] = useState(careerOption && careerOption);
+  const [navigation, setNavigation] = useState();
 
+  useEffect(()=>{
+    setNavigation(careerOption);
+  },[careerOption])
   const handleChange = (item) => {
     setNavigation(item);
   };

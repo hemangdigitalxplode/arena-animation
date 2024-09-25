@@ -95,6 +95,7 @@ const styles = {
 };
 
 const Footer = ({ centers, handleShow, handleCall, phoneNo }) => {
+  const currentYear = new Date().getFullYear();
   const [courses, setCourses] = useState([]);
   useEffect(() => {
     API.get("/course")
@@ -419,7 +420,7 @@ const Footer = ({ centers, handleShow, handleCall, phoneNo }) => {
           </Link>
         </div>
         <div className="copyRight mt-4">
-          Copyright © 2023. Digital Xplode All Rights Reserved.
+          Copyright © {currentYear}. Digital Xplode All Rights Reserved.
         </div>
         {/* </div> */}
       </Container>
