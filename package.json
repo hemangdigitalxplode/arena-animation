@@ -38,11 +38,16 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "npm run generate-sitemap && react-scripts build",
+    "postbuild": "react-snap",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "deploy": "serve -s build",
     "generate-sitemap": "node generate-sitemap.js"
   },
+  "reactSnap": {
+  "inlineCss": true,
+  "minifyHtml": true
+},
   "eslintConfig": {
     "extends": [
       "react-app",
@@ -60,5 +65,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "react-snap": "^1.23.0"
   }
 }
