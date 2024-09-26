@@ -5,6 +5,7 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { Circles } from "react-loader-spinner";
 import { Helmet } from 'react-helmet';
+import * as serviceWorker from './serviceWorker';
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -36,7 +37,7 @@ root.render(
 );
 
 
-
+serviceWorker.register();
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
