@@ -4,7 +4,6 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { Circles } from "react-loader-spinner";
-import { Helmet } from 'react-helmet';
 import * as serviceWorker from './serviceWorker';
 
 const root = ReactDOM.createRoot(document.getElementById("root"));

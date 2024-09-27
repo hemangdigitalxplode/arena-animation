@@ -128,7 +128,7 @@ const Footer = ({ centers, handleShow, handleCall, phoneNo }) => {
                     style={styles.testimonialImage}
                     alt="testimonial"
                   />
-                  <h1 style={styles.heading}>Gagan Singh</h1>
+                  <h3 style={styles.heading}>Gagan Singh</h3>
                   <p style={styles.testimonialText}>
                     I want to Thanks Arena animaton. recently I got selected in
                     kuku Fm and got a handsome sallery package. It's like dream
@@ -145,7 +145,7 @@ const Footer = ({ centers, handleShow, handleCall, phoneNo }) => {
                     style={styles.testimonialImage}
                     alt="testimonial"
                   />
-                  <h1 style={styles.heading}>Shakti Chandra</h1>
+                  <h3 style={styles.heading}>Shakti Chandra</h3>
                   <p style={styles.testimonialText}>
                     I had a wonderful learning experience at Arena Animation
                     Preet Vihar. The trainers are incredibly supportive and
@@ -166,7 +166,7 @@ const Footer = ({ centers, handleShow, handleCall, phoneNo }) => {
                     roundedCircle
                     style={styles.testimonialImage}
                   />
-                  <h1 style={styles.heading}>Jitanshu Tomar</h1>
+                  <h3 style={styles.heading}>Jitanshu Tomar</h3>
                   <p style={styles.testimonialText}>
                     Arena Animation Preet Vihar exceeded my expectations in
                     terms of quality education. The courses are well-structured,
@@ -183,7 +183,7 @@ const Footer = ({ centers, handleShow, handleCall, phoneNo }) => {
                     roundedCircle
                     style={styles.testimonialImage}
                   />
-                  <h1 style={styles.heading}>Keshav Verma</h1>
+                  <h3 style={styles.heading}>Keshav Verma</h3>
                   <p style={styles.testimonialText}>
                     Arena Institute is the best institute for learning and
                     growing professionally. They have the best faculty you can
@@ -203,7 +203,7 @@ const Footer = ({ centers, handleShow, handleCall, phoneNo }) => {
         {/* <div className="container-default footerContainer"> */}
         <div className="logo-div">
           <Link to="https://animationdelhincr.com" aria-label="Arena Animation">
-            <img src={Logo} alt="" className="logo-img" />
+            <img src={Logo} alt="logo" className="logo-img" />
           </Link>
         </div>
         <div className="addressTable">
@@ -215,9 +215,8 @@ const Footer = ({ centers, handleShow, handleCall, phoneNo }) => {
                   <address className="h-card">
                     <div className="bold yellow mb-2">{address.title}</div>
                     <div className="text-f">
-                      {address.title_second}{" "}
-                      <a
-                        href="#"
+                      {address.title_second}
+                      <a href="#"
                         className="text-icon fa fa-map-marker"
                         aria-label="location"
                       ></a>
@@ -271,7 +270,7 @@ const Footer = ({ centers, handleShow, handleCall, phoneNo }) => {
                 to="https://animationdelhincr.com"
                 aria-label="Arena Animation Delhi"
               >
-                <img src={Logo} alt="" className="logo-img mt-3" />
+                <img src={Logo} alt="logo" className="logo-img mt-3" />
               </Link>
               <p className="mt-2 font-weight-bold textClr">Arena Animation</p>
               <p className="customFont">
