@@ -38,15 +38,16 @@
     font-family: "Outfit", sans-serif;
     font-size: 21px;
     line-height: 1.5;
-    padding: 15% 50px;
-    gap: 80px;
+    padding: 5% 50px;
+    gap: 40px;
     .paraContainer-left {
+      // margin-top: 250px;
       .paraContainer-left-first {
         padding-bottom: 30px;
       }
     }
     .paraContainer-right {
-      padding-top: 15%;
+      padding-top: 25%;
       .knowMore {
         cursor: pointer;
         display: flex;
