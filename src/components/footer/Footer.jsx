@@ -130,10 +130,7 @@ const Footer = ({ centers, handleShow, handleCall, phoneNo }) => {
                   />
                   <h3 style={styles.heading}>Gagan Singh</h3>
                   <p style={styles.testimonialText}>
-                    I want to Thanks Arena animaton. recently I got selected in
-                    kuku Fm and got a handsome sallery package. It's like dream
-                    come true for me and it's all happened because of Arena
-                    animaton. The faculty is very supportive, friendly.
+                  I want to Thanks Arena Animaton. recently I got selected in Kuku FM and got a handsome sallery package. It's like dream come true for me and it's all happened because of the Top Institute for Animation Courses in Noida - Arena Animaton. The faculty is very supportive, friendly.
                   </p>
                 </div>
               </Col>
@@ -185,11 +182,7 @@ const Footer = ({ centers, handleShow, handleCall, phoneNo }) => {
                   />
                   <h3 style={styles.heading}>Keshav Verma</h3>
                   <p style={styles.testimonialText}>
-                    Arena Institute is the best institute for learning and
-                    growing professionally. They have the best faculty you can
-                    learn with. Teaching updated softwares is not the only
-                    delight of it, you will also learn how to develop your
-                    professional character for your future.
+                  Arena Institute is the Best Institute for Animation Courses in Noida for learning and growing professionally. They have the best faculty you can learn with. Teaching updated software is not the only delight of it, you will also learn how to develop your professional character for your future.
                   </p>
                 </div>
               </Col>
