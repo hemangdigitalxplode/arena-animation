@@ -4,70 +4,71 @@
   height: 100%;
   border: 0.0625rem solid rgba(220, 224, 229, 0.6);
   border-radius: 0.25rem;
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   height: 100%;
   background-color: #111111;
 }
 
 .blog-grid span {
-  color: #292dc2
+  color: #292dc2;
 }
 
 .blog-grid img {
   width: 100%;
+  height: 250px;
   border-top-left-radius: 0.25rem;
-  border-top-right-radius: 0.25rem
+  border-top-right-radius: 0.25rem;
 }
 
 .blog-grid-text {
-  position: relative
+  position: relative;
 }
 
-.blog-grid-text>span {
+.blog-grid-text > span {
   color: #292dc2;
   font-size: 13px;
-  padding-right: 5px
+  padding-right: 5px;
 }
 
 .blog-grid-text h4 {
   line-height: normal;
-  margin-bottom: 15px
+  margin-bottom: 15px;
 }
 
 .blog-grid-text .meta-style2 {
   border-top: 1px dashed #cee1f8;
-  padding-top: 15px
+  padding-top: 15px;
 }
 
 .blog-grid-text .meta-style2 ul li {
   margin-bottom: 0;
-  font-weight: 500
+  font-weight: 500;
 }
 
 .blog-grid-text .meta-style2 ul li:last-child {
-  margin-right: 0
+  margin-right: 0;
 }
 
 .blog-grid-text ul {
   margin: 0;
-  padding: 0
+  padding: 0;
 }
 
 .blog-grid-text ul li {
   display: inline-block;
   font-size: 14px;
   font-weight: 500;
-  margin: 5px 10px 5px 0
+  margin: 5px 10px 5px 0;
 }
 
 .blog-grid-text ul li:last-child {
-  margin-right: 0
+  margin-right: 0;
 }
 
 .blog-grid-text ul li i {
   font-size: 14px;
   font-weight: 600;
-  margin-right: 5px
+  margin-right: 5px;
 }
 
 .blog-grid-text p {
@@ -78,31 +79,30 @@
 
 .blog-list-left-heading:after,
 .blog-title-box:after {
-  content: '';
-  height: 2px
+  content: "";
+  height: 2px;
 }
 
 .blog-grid-simple-content a:hover {
-  color: #1d184a
+  color: #1d184a;
 }
 
 .blog-grid-simple-content a:hover:after {
-  color: #1d184a
+  color: #1d184a;
 }
 .blog-grid-text {
   position: relative;
-
 }
 
-.blog-grid-text>span {
+.blog-grid-text > span {
   color: #292dc2;
   font-size: 13px;
-  padding-right: 5px
+  padding-right: 5px;
 }
 
 .blog-grid-text h4 {
   line-height: normal;
-  margin-bottom: 15px
+  margin-bottom: 15px;
 }
 
 .blog-grid-text .meta-style2 {
@@ -113,55 +113,57 @@
 
 .blog-grid-text .meta-style2 ul li {
   margin-bottom: 0;
-  font-weight: 500
+  font-weight: 500;
 }
 
 .blog-grid-text .meta-style2 ul li:last-child {
-  margin-right: 0
+  margin-right: 0;
 }
 
 .blog-grid-text ul {
   margin: 0;
-  padding: 0
+  padding: 0;
 }
 
 .blog-grid-text ul li {
   display: inline-block;
   font-size: 14px;
   font-weight: 500;
-  margin: 5px 10px 5px 0
+  margin: 5px 10px 5px 0;
 }
 
 .blog-grid-text ul li:last-child {
-  margin-right: 0
+  margin-right: 0;
 }
 
 .blog-grid-text ul li i {
   font-size: 14px;
   font-weight: 600;
-  margin-right: 5px
+  margin-right: 5px;
 }
 
 .blog-grid-text p {
   font-weight: 400;
-  padding: 0
+  padding: 0;
 }
-
 
 .pagination {
   border-radius: 0;
   padding: 0;
-  margin: 0
+  margin: 0;
 }
-.blog-grid-text h3 a{
-  color:white;
+.blog-grid-text h3 a {
+  color: white;
 }
-.top-banner-section .reward-title {
+.text-yellow {
+  color: yellow;
+}
+.top-banner-section-blog .reward-title {
   position: absolute;
-  top: 40%;
-  left: 18%;
+  top: auto;
+  left: auto;
   font-size: 120px;
-  padding-top: 40px;
+  padding-top: 0;
   font-family: "BrbasNeueBoldItalic";
   line-height: 0.8;
   color: #fff;
@@ -174,11 +176,11 @@
   *display: inline;
   *zoom: 1;
   margin: 0 auto;
-  padding: 0
+  padding: 0;
 }
 
 .pagination li {
-  display: inline
+  display: inline;
 }
 
 .pagination a {
@@ -188,42 +190,53 @@
   text-decoration: none;
   border: 1px solid #dbdbdb;
   border-left-width: 0;
-  background: #fff
+  background: #fff;
 }
 
 .pagination a:hover {
   background-color: #000000;
-  color: #fff
+  color: #fff;
 }
 
 .pagination .active a {
   background-color: #f7f7f7;
   color: #999;
-  cursor: default
+  cursor: default;
 }
 
 .pagination .disabled span {
   color: #999;
   background-color: transparent;
-  cursor: default
+  cursor: default;
 }
 
 .pagination .disabled a {
   color: #999;
   background-color: transparent;
-  cursor: default
+  cursor: default;
 }
 
 .pagination .disabled a:hover {
   color: #999;
   background-color: transparent;
-  cursor: default
+  cursor: default;
 }
 
 .pagination li:first-child a {
-  border-left-width: 1px
+  border-left-width: 1px;
 }
 
-.mt-6, .my-6 {
+.mt-6,
+.my-6 {
   margin-top: 3.5rem;
+}
+
+@media screen and (max-width: 540px) {
+  .top-banner-section-blog {
+    .reward-title {
+      font-size: 40px !important;
+      padding: 15px;
+      letter-spacing: 0;
+    }
+  }
 }

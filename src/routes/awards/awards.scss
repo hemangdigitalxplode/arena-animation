@@ -62,7 +62,6 @@
   .height-80vh {
     height: auto;
   }
- 
 }
 
 @media screen and (max-width: 540px) {
@@ -70,7 +69,8 @@
     .reward-title {
       font-size: 40px !important;
       left: 12%;
+      padding-top: 0;
+      letter-spacing: 0;
     }
   }
-
 }

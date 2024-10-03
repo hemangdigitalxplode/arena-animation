@@ -1,6 +1,5 @@
 import React from "react";
 import "./bloginner.scss";
-import { rewardsBanner } from "../../assets";
 import { Col, Container, Image, Row } from "react-bootstrap";
 
 function CanAnimation() {
@@ -9,19 +8,20 @@ function CanAnimation() {
       <div className="blog-single gray-bg">
         <Container>
           <Row className="align-items-start">
-            <div className="top-banner-section">
-              <Image src={rewardsBanner} alt="" fluid className="height-80vh" />
-              <div className="reward-title" style={{fontSize:"76px"}}>Can Animation Be Considered ...</div>
+            <div className="top-banner-section-blog d-flex justify-content-center align-items-center">
+              <Image
+                src="https://animationdelhincr.com/admin/public/uploads/blog/animation-as-an-art-form.jpg"
+                alt=""
+                fluid
+                className="height-80vh"
+                width="100%"
+                style={{ opacity: 0.5 }}
+              />
+              <div className="reward-title" style={{ fontSize: "76px" }}>
+                Can Animation Be Considered ...
+              </div>
             </div>
             <Col sm={12} md={12} className="m-15 px-tb  pt-5">
-              <div className="article-img">
-                <Image
-                  src="https://animationdelhincr.com/admin/public/uploads/blog/animation-as-an-art-form.jpg"
-                  title=""
-                  alt=""
-                  width={"100%"}
-                />
-              </div>
               <article className="article ps-4 mt-0">
                 <div className="article-title">
                   <h3>Can Animation Be Considered as an Art Form?</h3>
@@ -53,12 +53,12 @@ function CanAnimation() {
                   </p>
 
                   <p>
-                    Conventional Art forms can be broadly classified as
-                     • Visual Arts (Architecture, Painting, Sculpture) <br/>
-                    • Literary Arts (Fiction, Drama, Poetry, Prose) <br/>
-                    • Performing Arts (Dance, Music, Theatre) <br/>
-                    • Culinary Arts (Cooking, wine-making) <br/>
-                    • Media Arts (Filmmaking, Photography)
+                    Conventional Art forms can be broadly classified as • Visual
+                    Arts (Architecture, Painting, Sculpture) <br />
+                    • Literary Arts (Fiction, Drama, Poetry, Prose) <br />
+                    • Performing Arts (Dance, Music, Theatre) <br />
+                    • Culinary Arts (Cooking, wine-making) <br />• Media Arts
+                    (Filmmaking, Photography)
                   </p>
                   <p>
                     However, since the advent of computers in the latter half of
@@ -73,21 +73,23 @@ function CanAnimation() {
                     The following characteristics of Animation give a strong
                     argument for it being an art form:
                   </p>
-                  <h3 className="text-white">Involves Creativity and Imagination</h3>
+                  <h3 className="text-yellow">
+                    Involves Creativity and Imagination
+                  </h3>
                   <p>
                     Animation is essentially a creative activity. It involves
                     imagining new characters, objects environments, stories etc.
                     and giving them different colours, shades, textures,
                     expressions and a hundred such elements.
                   </p>
-                  <h3 className="text-white">Personal Skills </h3>
+                  <h3 className="text-yellow">Personal Skills </h3>
                   <p>
                     To become an Animator some certain personal abilities and
                     skills are required. An actor is not necessarily a good
                     singer or a musician. What art a person is good at depends
                     on their traits and interests.
                   </p>
-                  <h3 className="text-white">Practical Knowledge</h3>
+                  <h3 className="text-yellow">Practical Knowledge</h3>
                   <p>
                     All art forms revolve around the application of skills in
                     practical life situations. For example, to be a singer, it
@@ -101,7 +103,9 @@ function CanAnimation() {
                     techniques that are taught in different animation courses
                     from reputed institutes.
                   </p>
-                  <h3 className="text-white">Requires perfection through practice</h3>
+                  <h3 className="text-yellow">
+                    Requires perfection through practice
+                  </h3>
                   <p>
                     Perfection is something an artist can never truly achieve,
                     but it’s something he or she constantly needs to strive for,

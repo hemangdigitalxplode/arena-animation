@@ -3,10 +3,10 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import BlogList from "./routes/blog/BlogList";
 import "./App.css";
 import ApplyNowModal from "./components/applyNowModal/ApplyNowModal";
-import BlogDetails from "./routes/blog/BlogDetails"; 
+import BlogDetails from "./routes/blog/BlogDetails";
 import Oscar2020 from "./routes/blog/Oscar2020";
 import CanAnimation from "./routes/blog/CanAnimation";
-import { Helmet } from 'react-helmet';
+import { Helmet } from "react-helmet";
 import GettheBasicsRight from "./routes/blog/GettheBasicsRight";
 import Designing from "./routes/blog/Designing";
 import Thankyou from "./routes/thankyou/Thankyou";
@@ -48,28 +48,47 @@ function App() {
   const handleShow = () => setShow(true);
   return (
     <div className="app">
-
       <BrowserRouter basename={basename}>
-      <Helmet/>
+        <Helmet />
 
         <Routes>
           <Route path="/" element={<Layout handleShow={handleShow} />}>
             <Route index element={<Container handleShow={handleShow} />} />
-              {/* <Route path="/oscar-2020" component={Oscar2020} exact /> */}
-              <Route
+            {/* <Route path="/oscar-2020" component={Oscar2020} exact /> */}
+            <Route
               path="/blog"
               element={<BlogDetails handleShow={handleShow} />}
             />
-                 <Route path="/blog/blue-screen-vs-green-screen" element={<BlogList />} />
-                 <Route path="/blog/can-animation" element={<CanAnimation/>} />
-                 <Route path="/blog/get-the-basics-right" element={<GettheBasicsRight/>} />
-                 <Route path="/blog/ux-designing" element={<Designing/>} />
-                 <Route path="/blog/oscar-2020" element={<Oscar2020 />} />
-                 {/* New blogs route created here */}
-                 <Route path="/blog/2d-animation-course" element={<Animation2D/>} />
-                 <Route path="/blog/3d-animation-course" element={<Animation3D/>} />
+            <Route
+              path="/blog/blue-screen-vs-green-screen"
+              element={<BlogList />}
+            />
+            <Route
+              path="/blog/can-animation-be-considered-as-an-art-form"
+              element={<CanAnimation />}
+            />
+            <Route
+              path="/blog/get-the-basics-right-12-principles-of-animation-part-2"
+              element={<GettheBasicsRight />}
+            />
+            <Route
+              path="/blog/ux-designing-process-simplified-for-absolute-beginners"
+              element={<Designing />}
+            />
+            <Route
+              path="/blog/oscar-2020-winner-and-nominees-for-best-visual-effects"
+              element={<Oscar2020 />}
+            />
+            {/* New blogs route created here */}
+            <Route
+              path="/blog/elevate-your-creativity-with-animation-delhi-ncrs-2d-animation-course-in-noida"
+              element={<Animation2D />}
+            />
+            <Route
+              path="/blog/choosing-animation-delhi-ncr-for-your-3d-animation-course-an-informed-decision"
+              element={<Animation3D />}
+            />
 
-                 
             <Route
               path="/course-details/:id"
               element={<CourseDetails handleShow={handleShow} />}
@@ -86,17 +105,16 @@ function App() {
             <Route path="/rewards" element={<Awards />} />
             <Route path="/activity/:id" element={<ActivityDetails />} />
             <Route path="/blog/:id" element={<Blog />} />
-            <Route path="/thank-you" element={<Thankyou/>} />
+            <Route path="/thank-you" element={<Thankyou />} />
             <Route path="/student-work" element={<StudentWork />} />
-            <Route path="/terms-&-conditions" element={<TermsConditions/>} />
-            <Route path="/about-us" element={<AboutUs/>} />
+            <Route path="/terms-&-conditions" element={<TermsConditions />} />
+            <Route path="/about-us" element={<AboutUs />} />
             <Route
               path="/student-loan"
               element={<StudentLoan handleShow={handleShow} />}
             />
-            <Route path="*" element={<Custom404/>}/>
+            <Route path="*" element={<Custom404 />} />
           </Route>
- 
         </Routes>
       </BrowserRouter>
       <ApplyNowModal handleClose={handleClose} show={show} />

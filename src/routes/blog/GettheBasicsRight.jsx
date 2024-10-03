@@ -1,6 +1,5 @@
 import React from "react";
 import "./bloginner.scss";
-import { rewardsBanner } from "../../assets";
 import { Col, Container, Image, Row } from "react-bootstrap";
 
 function GettheBasicsRight() {
@@ -9,21 +8,20 @@ function GettheBasicsRight() {
       <div className="blog-single gray-bg">
         <Container>
           <Row className="align-items-start">
-            <div className="top-banner-section">
-              <Image src={rewardsBanner} alt="" fluid className="height-80vh" />
+            <div className="top-banner-section-blog d-flex justify-content-center align-items-center">
+              <Image
+                src="https://animationdelhincr.com/admin/public/uploads/blog/arena-blog-n.jpg"
+                alt=""
+                fluid
+                className="height-80vh"
+                width="100%"
+                style={{ opacity: 0.5 }}
+              />
               <div className="reward-title" style={{ fontSize: "76px" }}>
                 UX Designing Process Simplified ...
               </div>
             </div>
             <Col sm={12} md={12} className="m-15 px-tb  pt-5">
-              <div className="article-img">
-                <Image
-                  src="https://animationdelhincr.com/admin/public/uploads/blog/arena-blog-n.jpg                  "
-                  title=""
-                  alt=""
-                  width={"100%"}
-                />
-              </div>
               <article className="article ps-4 mt-0">
                 <div className="article-title">
                   <h3>
@@ -45,7 +43,7 @@ function GettheBasicsRight() {
                     concepts continues to form the base and is taught in all
                     popular animation institutes around the world.
                   </p>
-                  <h3 className="text-white">Arc</h3>
+                  <h3 className="text-yellow">Arc</h3>
                   <p>
                     Try waving your hand, swinging your leg or turning your
                     head. These a natural arc to these movements. This arc
@@ -53,7 +51,7 @@ function GettheBasicsRight() {
                     course, your character is a robot. See how Po’s head moves?
                   </p>
 
-                  <h3 className="text-white">Staging</h3>
+                  <h3 className="text-yellow">Staging</h3>
 
                   <p>
                     Derived from the concept of staging in theatre, this is the
@@ -63,7 +61,7 @@ function GettheBasicsRight() {
                     action and keep the audience’s focus on what is relevant in
                     the scene.
                   </p>
-                  <h3 className="text-white">Secondary Action </h3>
+                  <h3 className="text-yellow">Secondary Action </h3>
                   <p>
                     As the name suggests, this is an action that supports the
                     main action of a character. A character may whistle while
@@ -73,7 +71,7 @@ function GettheBasicsRight() {
                     one another. Look at little Riley’s actions while she
                     screams at the top of her lungs.
                   </p>
-                  <h3 className="text-white"> Exaggeration </h3>
+                  <h3 className="text-yellow"> Exaggeration </h3>
                   <p>
                     This principle is self-explanatory. Animated movies and
                     cartoons allow for the most amazing thing - exaggeration.
@@ -84,7 +82,7 @@ function GettheBasicsRight() {
                     attitudes add more appeal and fun to the characters. Here is
                     a classic example of exaggeration.
                   </p>
-                  <h3 className="text-white"> Solid Drawing </h3>
+                  <h3 className="text-yellow"> Solid Drawing </h3>
                   <p>
                     In 2D animation, solid drawing is about maintaining
                     proportions, volume & weight of a character or an object
@@ -94,7 +92,7 @@ function GettheBasicsRight() {
                     with correct balance & weight remains as important as ever.
                   </p>
 
-                  <h3 className="text-white"> Appeal </h3>
+                  <h3 className="text-yellow"> Appeal </h3>
                   <p>
                     In real life, you may call it the charisma of an actor. In
                     animation, it is the ‘appeal’. Every character should have

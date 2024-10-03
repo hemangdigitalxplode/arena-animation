@@ -1,6 +1,5 @@
 import React from "react";
 import "./bloginner.scss";
-import { rewardsBanner } from "../../assets";
 import { Col, Container, Image, Row } from "react-bootstrap";
 
 function Oscar2020() {
@@ -9,22 +8,24 @@ function Oscar2020() {
       <div className="blog-single gray-bg">
         <Container>
           <Row className="align-items-start">
-            <div className="top-banner-section">
-              <Image src={rewardsBanner} alt="" fluid className="height-80vh" />
-              <div className="reward-title" style={{fontSize:"76px"}}> Oscar 2020 Winner and Nominees .. </div>
+            <div className="top-banner-section-blog d-flex justify-content-center align-items-center">
+              <Image
+                src="https://animationdelhincr.com/admin/public/uploads/blog/first.jpg"
+                alt=""
+                fluid
+                className="height-80vh"
+                width="100%"
+                style={{ opacity: 0.5 }}
+              />
+              <div className="reward-title" style={{ fontSize: "76px" }}>
+                {" "}
+                Oscar 2020 Winner and Nominees ..{" "}
+              </div>
             </div>
             <Col sm={12} md={12} className="m-15 px-tb  pt-5">
-              <div className="article-img">
-                <Image
-                  src="https://animationdelhincr.com/admin/public/uploads/blog/first.jpg"
-                  title=""
-                  alt=""
-                  width={"100%"}
-                />
-              </div>
               <article className="article ps-4 mt-0">
                 <div className="article-title">
-                  <h3 className="text-white">
+                  <h3 className="text-yellow">
                     Oscar 2020 Winner and Nominees for Best Visual Effects
                   </h3>
                 </div>
@@ -35,7 +36,7 @@ function Oscar2020() {
                     great with three movies, the others had more or less if not
                     equal the chances for a win.
                   </p>
-                  <h3 className="text-white">1947</h3>
+                  <h3 className="text-yellow">1947</h3>
                   <p>
                     This Oscar winner proves that visual effects are not just
                     some replacements done to a green screen through digital
@@ -54,18 +55,16 @@ function Oscar2020() {
                     digital painting work of the VFX artists had to be precise
                     and intricate.
                   </p>
-                  <blockquote>
-                    <p>
-                      Apart from 1917, Birdman too was shot using this
-                      one-continuous shot technique and was nominated for an
-                      Oscar in the same category.
-                    </p>
-                  </blockquote>
+                  <p>
+                    Apart from 1917, Birdman too was shot using this
+                    one-continuous shot technique and was nominated for an Oscar
+                    in the same category.
+                  </p>
                   <p>
                     In a nutshell, VFX is more effective when it goes
                     unnoticeable.
                   </p>
-                  <h3 className="text-white">The Irishman</h3>
+                  <h3 className="text-yellow">The Irishman</h3>
                   <p>
                     It is masterpiece from Martin Scorsese and a big budget
                     ambition project due to the cast and the de-aging used in
@@ -75,7 +74,7 @@ function Oscar2020() {
                     to look like his 40s. The present age of De Niro is 76. If
                     you haven’t watched it already it is available on Netflix.
                   </p>
-                  <h3 className="text-white">Avengers Endgame</h3>
+                  <h3 className="text-yellow">Avengers Endgame</h3>
                   <p>
                     Being the most anticipated movie of 2019, VFX artists had no
                     room for error. The final fight sequence against the army of
@@ -85,7 +84,7 @@ function Oscar2020() {
                     time for production design to develop full-fledged sets, and
                     they had to rely on VFX.
                   </p>
-                  <h3 className="text-white">The Lion King</h3>
+                  <h3 className="text-yellow">The Lion King</h3>
                   <p>
                     Imagine the CGI being so good that it actually becomes a
                     shortcoming of the movie. That’s exactly what happened with
@@ -99,7 +98,9 @@ function Oscar2020() {
                     natures of animals is nothing less than a revolutionary
                     feat.
                   </p>
-                  <h3 className="text-white">Star Wars: The Rise of Skywalker</h3>
+                  <h3 className="text-yellow">
+                    Star Wars: The Rise of Skywalker
+                  </h3>
                   <p>
                     Layers of work went into The Rise of Skywalker. Some of the
                     most striking VFX moments from the film include the assembly
@@ -111,12 +112,12 @@ function Oscar2020() {
                   </p>
                   <p>
                     Do you think 1917 deserves the Oscar win? Or do you have
-                    another personal favourite? Let us know in the comments. 
-                    </p>
-                    <p>
-                    If you wish to be more than just a spectator of amazing visual
-                    effects, join a VFX course and get the skills to create your
-                    own VFX. Click here to know more.
+                    another personal favourite? Let us know in the comments.
+                  </p>
+                  <p>
+                    If you wish to be more than just a spectator of amazing
+                    visual effects, join a VFX course and get the skills to
+                    create your own VFX. Click here to know more.
                   </p>
                 </div>
               </article>

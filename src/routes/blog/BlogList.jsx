@@ -1,29 +1,29 @@
 import React from "react";
 import "./bloginner.scss";
-import { rewardsBanner } from "../../assets";
 import { Col, Container, Image, Row } from "react-bootstrap";
 
 function BlogList() {
   return (
     <>
       <div className="blog-single gray-bg">
-               
-
         <Container>
           <Row className="align-items-start">
-            <div className="top-banner-section">
-              <Image src={rewardsBanner} alt="" fluid className="height-80vh" />
-              <h1 className="reward-title" style={{fontSize:"76px"}}> Blue Screen Vs Green Screen: Explained </h1>
+            <div className="top-banner-section-blog d-flex justify-content-center align-items-center">
+              <Image
+                src="https://animationdelhincr.com/admin/public/uploads/blog/n-Feature-image2.jpg"
+                alt=""
+                fluid
+                className="height-80vh"
+                width="100%"
+                style={{ opacity: 0.5 }}
+              />
+              <h1 className="reward-title" style={{ fontSize: "76px" }}>
+                {" "}
+                Blue Screen Vs Green Screen: Explained{" "}
+              </h1>
             </div>
             <Col sm={12} md={12} className="m-15 px-tb  pt-5">
-              <div className="article-img">
-                <Image
-                  src="https://animationdelhincr.com/admin/public/uploads/blog/n-Feature-image2.jpg"
-                  title=""
-                  alt=""
-                  width={"100%"}
-                />
-              </div>
+              <div className="article-img"></div>
               <article className="article ps-4 mt-0">
                 <div className="article-title">
                   <h3>Blue Screen Vs Green Screen: Explained</h3>
@@ -87,15 +87,14 @@ function BlogList() {
                     screen thus it’s an expensive choice. This difference in
                     luminosity results in less colour spill than green. You
                     would not want your post production to be messy after all.
-                    </p>
-                    <p>
+                  </p>
+                  <p>
                     In conclusion even though blue gets the upper hand, the
                     green screen is still the most popular choice for chroma key
                     compositing since it's cheaper and has lesser depth with
                     respect to its surface. Nevertheless, you may need to use
                     both screens in various circumstances. The ideal solution is
-                    not just one. 
-                    Fascinated with the behind-the-scene
+                    not just one. Fascinated with the behind-the-scene
                     intricacies about film-making? You can become an integral
                     part of the process too. Get trained in VFX fundamental and
                     advanced techniques at Arena Animation. Check out the career
@@ -105,7 +104,6 @@ function BlogList() {
                 </div>
               </article>
             </Col>
-
           </Row>
         </Container>
       </div>
